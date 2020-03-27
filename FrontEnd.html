@@ -9,51 +9,19 @@
     <h1>Food Finder App</h1>
     <h2>How it works</h2>
     <p>
-        Enter the amount of recipes you want to see in the first box. Enter the ingredients you have in the search bar and find out what food you can make!
-    </p>
+        Enter the amount of recipes you want to see in the first box. Enter the ingredients you have in the search bar and find out what food you can make!    
+    </p>   
+    <p>Number of recipes to find: <input type = "number" id = "nRecipes" value = 0></p>
+    <p>Ingredient: <input type = "text" id = "item1" value = ""></p>
     
-
+    <button onclick = "callAPI()">Find Food!</button>
+    
+    <p id="recipes"></p>
+    
+    <p id="pics"></p>
+    
+    <div id="root"></div>
+    <script src="apiConnect.js"></script>
+    
 </body>
-
-<p>Number of recipes to find: <input type = "number" id = "nRecipes" value = 0></p>
-
-<p>Ingredient: <input type = "text" id = "item1" value = ""></p>
-
-<button onclick = "callAPI()">Go</button>
-
-<p>Recipes: <input type = "text" id = "options" value = ""></p>
-
-<script>
-function callAPI() {
-    
-    const ingredient = document.getElementById("item1").value;
-    const numRecipes = document.getElementById("nRecipes").value;
-    
-    const nameAPI = "https://api.spoonacular.com/recipes/search?query=" + ingredient + "&number=" + numRecipes + "&apiKey=95d2bf9a71c94e58b5e18e0cf2ffb930";
-    
-    document.getElementById("options").value = nameAPI;
-    
-    const https = require('https');
-    
-    
-    
-    https.get(nameAPI, (resp) => {
-    let data = '';
-
-    // A chunk of data has been recieved.
-    resp.on('data', (chunk) => {
-        data += chunk;
-    });
-    // The whole response has been received. Print out the result.
-    resp.on('end', () => {
-        console.log(JSON.parse(data).results);
-    });
-
-    }).on("error", (err) => {
-        console.log("Error: " + err.message);
-    });
-    
-}
-</script>
-
 </html>
