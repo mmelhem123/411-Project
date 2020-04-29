@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿Primary User Stories
 User Story 1:
         As someone that loves sushi but is busy and does not have enough time to look on yelp or maps to find what sushi place I would like to eat at, I would like an easy and clean application to find the food I want to eat in a price range and quality that is right for me in a walking distance of one mile. The app should be really easy to use and aesthetically pleasing, preferably with bright designs and clear directions on how to navigate the application. Logging in should be easy and fast and not require more than maybe a username or password. Once I find a restaurant that suits my needs, I will get the address and walk there. 
@@ -27,4 +28,35 @@ Secondary Story 3:
 
 
 Secondary Story 4: 
+=======
+﻿Primary User Stories
+User Story 1:
+        As someone that loves sushi but is busy and does not have enough time to look on yelp or maps to find what sushi place I would like to eat at, I would like an easy and clean application to find the food I want to eat in a price range and quality that is right for me in a walking distance of one mile. The app should be really easy to use and aesthetically pleasing, preferably with bright designs and clear directions on how to navigate the application. Logging in should be easy and fast and not require more than maybe a username or password. Once I find a restaurant that suits my needs, I will get the address and walk there. 
+
+
+User Story 2:
+        As a logged-in user that loves foods with meat, I want to search for specific foods that contain meat that I could purchase. User logs in, fills in the search bar with ingredients they would like with meat and choose within 3 mile radius. The choice of what food they would like out of the options pops up and after choosing brings me to an empty page. As there are no restaurants that suit what they need, they switch to finding the recipe and decide to make the food instead. They find the recipe and the closest place with the ingredients, save them and make their way to get the ingredients.
+
+
+User Story 3: 
+        As someone who loves Mediterranean food, I want to be able to find places that have a dish with a specific ingredient(s) that I am looking for, such as falafel or greek yogurt. The app will let me choose a cuisine and then I can add additional ingredients to further specify the type(s) of dishes I am looking for. I eventually choose a recipe or dish and then I will get a list of locations that have that dish or are almost the same. Adding the filters and tags should be easy to keep track of what the users want and I should not need to login to access all features of the search.
+        
+________________
+
+
+Secondary User Stories 
+Secondary Story 1:
+        As the same person in primary User Story 3, I want Mediterannean again but I may want to change some ingredients in my search. When logged in, I should be able to save my searches and queries, such that I can easily pull them out again or if I want something that is a little different, I can access an old search or query and change a few tags or filters, which can then be saved as a new query. 
+
+
+Secondary Story 2:
+        As a user that has already logged in before, I want to make food at home. I do not know what to make. The app should allow me to input all my ingredients I currently have and display a couple recipes I could make. 
+
+
+Secondary Story 3:
+        As a previous user, they aren’t sure what they want to eat. User logs in, scrolls through the recommended but doesn’t seem to find anything they would like. The user remembers something they ordered about a month ago and goes to their order history. They go to the order history, find the food they ordered before, filter the history to show only restaurants from a month ago, and try to find it within a 3 mile radius. They find multiple restaurants with the food they want. Looking through the reviews they choose the one that seems the best and begin to head over.
+
+
+Secondary Story 4: 
+>>>>>>> f0fba3f1f4c14b6f0643e17f197e9882e44e9955
         As a previous user I already know what I want to eat, but I want to look at options in a different location than normal. I’m planning a trip somewhere new and want to find similar restaurants. Based off of my previous choices the app can help me plan ahead and locate new locations of the same style or type of food as before.
