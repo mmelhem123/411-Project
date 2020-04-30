@@ -10,16 +10,15 @@
     <h2>How it works</h2>
     <p>
         Enter the amount of recipes you want to see in the first box. Enter the ingredients you have in the search bar (separated by commas) and find out what food you can make!    
-    </p>   
-    <p>Number of recipes to find: <input type = "number" id = "nRecipes" value = 0></p>
-    <p>Ingredient: <input type = "text" id = "item1" value = ""></p>
+    </p>      
     
-    <button onclick = "callAPI()">Find Food!</button>
-    
-    <p id="recipesAndPics"></p>
-    
-    <div id="root"></div>
-    <script src="apiConnect.js"></script>
+    <form name="FindFood" action="." method="post">
+        <label>Number of recipes to find: </label>
+        <input type="text" name="nRecipes">
+        <label>Ingredients: </label>
+        <input type="text" name="ingredients">
+        <input type="submit" value="submit">
+    </form>
     
 </body>
 </html>

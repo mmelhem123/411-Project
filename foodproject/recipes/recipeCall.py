@@ -4,6 +4,11 @@ import urllib
 import json
 from urllib.request import Request, urlopen
 import requests
+from flask import Flask, render_template, request
+
+
+
+
 
 # api = sp.API("62398c3d538f461f977a1ad87dc9fe90")
 # api = "62398c3d538f461f977a1ad87dc9fe90"
@@ -16,6 +21,9 @@ headers = {
 }
 
 
+
+recipes = []
+images = []
 def getRecipe(ingredient, number):
     querystring = {"number": str(number), "ranking": "1", "ignorePantry": "false", "ingredients": str(ingredient)}
 
@@ -35,10 +43,32 @@ def getRecipe(ingredient, number):
                                "picture": element['image'],
                                }}
         print(data_set)
+        recipes.append(element['title'])
+        images.append(element['image'])
         structure.append(data_set)
         # print(element['id'])
     with open(ingredient + ".json", "w") as write_file:
         json.dump(structure, write_file)
+     
+
+app = Flask(__name__)
 
 
-getRecipe("beef", 20)
+@app.route('/')
+def FrontEnd():
+    return render_template('FrontEnd.html')
+
+@app.route('/', methods=['POST'])
+def getValues():
+    number = int(request.form['nRecipes'])
+    ingredients = request.form['ingredients']
+    getRecipe(ingredients, number)
+    return render_template('FrontEnd2.html', rec = recipes, imgs = images)
+
+
+
+
+
+
+
+

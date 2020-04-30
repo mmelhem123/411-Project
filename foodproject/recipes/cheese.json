@@ -1,0 +1,1 @@
+[{"model": "recipes.Recipe", "fields": {"id": 532895, "ingredient": "cheese", "recipe": "Twice Baked Potatoes with Greek Yogurt", "picture": "https://spoonacular.com/recipeImages/532895-312x231.jpg"}}, {"model": "recipes.Recipe", "fields": {"id": 1055066, "ingredient": "cheese", "recipe": "Cacio e Pepe", "picture": "https://spoonacular.com/recipeImages/1055066-312x231.jpg"}}]
